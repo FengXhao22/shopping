@@ -1,0 +1,288 @@
+.clothing{
+    width:100%;
+    background: #fff;
+
+    .container{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .back{
+            width: 50%;
+            img{
+                width: 100%;
+            }
+            
+        }
+
+        .box{
+            width: 50%;
+            padding-top: 8%;
+            .title{
+                text-transform: uppercase;
+                margin-bottom:2%;
+                text-align: left;
+                .short{
+                    font-family:OSBold;
+                    font-size:1.5em;
+                    padding: 0 0 3% 2%;
+                    font-weight:bold;
+                }
+
+                .long{
+                    font-size:2.5em;
+                    white-space: nowrap;
+
+                    span{
+                        &:last-child{
+                            font-family: OSLight;
+                        }
+                    }
+                }
+            }
+
+            .remark{
+                width: 80%;
+                color:#7e7e7e;
+                font-size:1em;
+                font-family: OSLight;
+                padding-bottom: 3%;
+            }
+            .price{
+                font-family:OSLight;
+                font-size:1.5em;
+                color: #999999;
+                padding-bottom: 2.5%;
+
+                span{
+                font-size: 1.6em;
+                color:red;
+                font-family:OSBold;
+                }
+            }
+            .add{
+                width: 100%;
+                .quantity{
+                    width: 23%;
+                    background: #f8f8f8;
+                    font-size: 1.1em;
+                    color: #b1b0b0;
+                    height: 3em;
+                    border-radius: 3em;
+                    line-height: 3em;
+                    padding: 0 1em;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    span{
+                        &:nth-child(2){
+                            color: #000;
+
+                        }
+                    }
+                }
+
+                .size{
+                    margin: 1em 0;
+                    width: 23%;
+                    background: #f8f8f8;
+                    font-size: 1.1em;
+                    color: #b1b0b0;
+                    height: 3em;
+                    border-radius: 3em;
+                    line-height: 3em;
+                    padding: 0 1em;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    span{
+                        &:nth-child(2){
+                            color: #000;
+
+                        }
+                    }
+                }
+
+                .colour{
+                    padding: 0 1em;
+                    width: 35%;
+                    background: #f8f8f8;
+                    font-size: 1.1em;
+                    color: #b1b0b0;
+                    height: 3em;
+                    border-radius: 3em;
+                    line-height: 3em;
+                    margin-bottom: 2em;
+                    span{
+                        display: inline-block;
+                        &:first-child{
+                            float: left;
+                        }
+                        &:last-child{
+                            float: right;
+                        }
+                    }
+                    
+                    
+                }
+                .bottom{
+                    width:100%;
+        
+                    .send{
+                        width:8em;
+                        height:2.5em;
+                        line-height: 2.5em;
+                        font-size:1.1em;
+                        text-align: center;
+                        border:0px;
+                        color:#fff;
+                        background:#fcac45;
+                        font-family: OSLight;
+                        transition: all linear .3s;
+                        border-radius: 100px;
+                        &:hover{
+                            transform:translateY(-10px);
+                            box-shadow: 0px 10px 10px 1px #c5c5c5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //当前屏幕 <=1250px max-width=1250px
+    @media screen and (max-width:1250px) {
+        .container{
+            width: 100%;
+            .box{
+                .add{
+                    .quantity{
+                        width: 27%;
+                    }
+                    .size{
+                        width: 27%;
+                    }
+                    .colour{
+                        width: 37%;
+                    }
+                }
+            }
+        }
+    }
+        //当前屏幕 <=950px max-width=950px
+    @media screen and (max-width:950px) {
+        .container{
+            width: 100%;
+            .box{
+                .add{
+                    .quantity{
+                        width: 30%;
+                    }
+                    .size{
+                        width: 30%;
+                    }
+                    .colour{
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:780px) {
+        .container{
+            width: 100%;
+            .box{
+                .add{
+                    .quantity{
+                        width: 35%;
+                    }
+                    .size{
+                        width: 35%;
+                    }
+                    .colour{
+                        width: 45%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:678px) {
+        .container{
+            width: 100%;
+            .back{
+                width: 100%;
+            }
+            .box{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.popular{
+    width:100%;
+    background:#fff;
+    .container{
+        width: 90%;
+        display: flex;
+        .title{
+            width: 100%;
+            font-size:3.5em;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: OSBold;
+            margin-bottom:5%;
+            color: #242424;
+            font-weight: bold;
+            padding-top: 3%;
+        }
+
+        .list{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:6%;
+            flex-wrap: wrap;
+
+        .item{
+            width:23%;
+            img{
+                width: 100%;
+            }
+        .content{
+            text-align: center;
+        }
+    
+        .describe{
+            font-family: OSBold;
+            font-size:0.5em;
+            color: #7e7e7e;
+        }
+    
+        .Dress{
+            font-family: OSBold;
+            margin-bottom:-2px;
+            color: #242424;
+            font-weight:bold;
+        }
+    
+        .money{
+            font-family: OSLight;
+            margin-bottom:10px;
+            color: #7e7e7e;
+            font-size:0.8em;
+        }
+     }
+    } 
+    /* 当前屏幕 <= 700px  */
+    @media screen and (max-width:700px){
+        .list{
+            .item{
+                width:48%;
+                
+            }
+        }
+    }
+  }
+}
+        
